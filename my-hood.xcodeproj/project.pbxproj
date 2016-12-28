@@ -12,16 +12,24 @@
 		1F4CFB931CDB8CED0072AD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4CFB911CDB8CED0072AD4B /* Main.storyboard */; };
 		1F4CFB951CDB8CED0072AD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4CFB941CDB8CED0072AD4B /* Assets.xcassets */; };
 		1F4CFB981CDB8CED0072AD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4CFB961CDB8CED0072AD4B /* LaunchScreen.storyboard */; };
+		1F4CFBA11CDB8D600072AD4B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CFBA01CDB8D600072AD4B /* Post.swift */; };
+		1F4CFBA41CDBB6790072AD4B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CFBA31CDBB6790072AD4B /* PostCell.swift */; };
+		1F4CFBA71CDC42DC0072AD4B /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CFBA61CDC42DC0072AD4B /* AddPostVC.swift */; };
+		1F4CFBAA1CDD058E0072AD4B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CFBA91CDD058E0072AD4B /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F4CFB8A1CDB8CED0072AD4B /* my-hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4CFB8D1CDB8CED0072AD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F4CFB8F1CDB8CED0072AD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F4CFB8F1CDB8CED0072AD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "my-hood/ViewController.swift"; sourceTree = "<group>"; };
 		1F4CFB921CDB8CED0072AD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F4CFB941CDB8CED0072AD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F4CFB971CDB8CED0072AD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4CFB991CDB8CED0072AD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4CFBA01CDB8D600072AD4B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1F4CFBA31CDBB6790072AD4B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		1F4CFBA61CDC42DC0072AD4B /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		1F4CFBA91CDD058E0072AD4B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,51 @@
 		1F4CFB8C1CDB8CED0072AD4B /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				1F4CFBA81CDD05780072AD4B /* Services */,
+				1F4CFB9F1CDB8D4E0072AD4B /* Model */,
+				1F4CFBA21CDBB65C0072AD4B /* View */,
+				1F4CFBA51CDC42A90072AD4B /* Controller */,
 				1F4CFB8D1CDB8CED0072AD4B /* AppDelegate.swift */,
-				1F4CFB8F1CDB8CED0072AD4B /* ViewController.swift */,
 				1F4CFB911CDB8CED0072AD4B /* Main.storyboard */,
 				1F4CFB941CDB8CED0072AD4B /* Assets.xcassets */,
 				1F4CFB961CDB8CED0072AD4B /* LaunchScreen.storyboard */,
 				1F4CFB991CDB8CED0072AD4B /* Info.plist */,
 			);
 			path = "my-hood";
+			sourceTree = "<group>";
+		};
+		1F4CFB9F1CDB8D4E0072AD4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F4CFBA01CDB8D600072AD4B /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F4CFBA21CDBB65C0072AD4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F4CFBA31CDBB6790072AD4B /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F4CFBA51CDC42A90072AD4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F4CFB8F1CDB8CED0072AD4B /* ViewController.swift */,
+				1F4CFBA61CDC42DC0072AD4B /* AddPostVC.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1F4CFBA81CDD05780072AD4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F4CFBA91CDD058E0072AD4B /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,12 +136,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = devPro;
 				TargetAttributes = {
 					1F4CFB891CDB8CED0072AD4B = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = T5X6AQ5A7M;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -136,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4CFBA11CDB8D600072AD4B /* Post.swift in Sources */,
 				1F4CFB901CDB8CED0072AD4B /* ViewController.swift in Sources */,
+				1F4CFBA71CDC42DC0072AD4B /* AddPostVC.swift in Sources */,
+				1F4CFBAA1CDD058E0072AD4B /* DataService.swift in Sources */,
 				1F4CFB8E1CDB8CED0072AD4B /* AppDelegate.swift in Sources */,
+				1F4CFBA41CDBB6790072AD4B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +227,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -223,8 +275,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -243,6 +297,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -256,6 +311,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devPro.my-hood";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -267,6 +323,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devPro.my-hood";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -289,6 +346,7 @@
 				1F4CFB9E1CDB8CED0072AD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
